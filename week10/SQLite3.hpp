@@ -22,6 +22,10 @@ concept Row = requires (R r, std::string s) {
     r.set(s, s);
 };
 
+// create exceptions as you need
+// the class should throw an exception when an error occurs
+// make the sqlite3 error message the text of the exception
+
 class SQLite3 {
 public:
     // default constructor
